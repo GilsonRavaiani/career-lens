@@ -1,70 +1,179 @@
-Passo a passo com a IA
+# Career-Lens
 
-✅ Repositório: GilsonRavaiani/career-lens
-✅ Público
-✅ README.md
-✅ LICENSE — MIT
-✅ Branch main
-✅ Descrição profissional já configurada
+Plataforma de inteligência de carreira com IA para analisar perfis profissionais, comparar requisitos de vagas e identificar gaps de competências.
 
-Abrir o repositório CareerLens
+## 🎯 Problema
 
-Agora começa a parte realmente interessante: vamos transformar esse repositório em um projeto que demonstre sua evolução em AI Engineering.
+Profissionais frequentemente têm dificuldade para avaliar de forma objetiva como suas experiências e competências se relacionam com as exigências de uma vaga.
 
-Próximo passo: README profissional
+Currículos apresentam experiências em linguagem livre, enquanto vagas descrevem requisitos com terminologias, níveis de senioridade e tecnologias diferentes.
 
-Não quero deixar aquele README vazio/genérico. Vamos criar uma primeira versão com:
+O Career-Lens nasce para reduzir essa distância por meio de análise estruturada apoiada por Inteligência Artificial.
 
-CareerLens
-│
-├── 🎯 Problema
-├── 💡 Solução
-├── 🏗️ Arquitetura
-├── 🧠 RAG
-├── 🤖 AI Agent
-├── 🔌 MCP
-├── 📊 Evaluation
-├── 🛠️ Tecnologias
-├── 📁 Estrutura do projeto
-├── 🧪 Testes
-├── 🚀 Roadmap
-└── 👤 Autor
+## 💡 Solução
 
-E tem uma estratégia importante:
+O Career-Lens terá como objetivo:
 
-não vamos fingir que MCP, Agents ou Evaluation já estão implementados.
+- analisar um perfil profissional;
+- interpretar requisitos de uma vaga;
+- identificar competências existentes;
+- identificar competências ausentes ou pouco evidentes;
+- comparar perfil e vaga;
+- gerar um relatório de gaps;
+- sugerir uma trilha de evolução profissional.
 
-Vamos documentar o projeto como uma evolução real, por exemplo:
+O desenvolvimento será incremental, adicionando novas capacidades de IA conforme o projeto evolui.
 
-v0.1 — definição do problema
-v0.2 — RAG
-v0.3 — Agent
-v0.4 — MCP
-v0.5 — Evaluation
-v1.0 — CareerLens completo
+## 🏗️ Arquitetura
 
-Isso é excelente para mostrar esforço, aprendizado e engenharia, porque quem avaliar o GitHub consegue acompanhar como você construiu a solução.
+A arquitetura será construída progressivamente.
 
-E podemos aproveitar o que já estudamos no AI-103: RAG, Agents, Tools, MCP, groundedness e evaluation, sem transformar o projeto em um simples chatbot.
+Fluxo planejado:
 
-Minha sugestão: agora fazemos o README v0.1 completo e já colocamos no GitHub.
+Perfil profissional  
+↓  
+Extração e normalização de competências  
+↓  
+Análise da vaga  
+↓  
+Comparação perfil × requisitos  
+↓  
+Gap Analysis  
+↓  
+Recomendações de desenvolvimento
 
-Não vamos citar mada de AI 103, e me fale o que coloco no readme agora
+Componentes avançados como RAG, agentes, MCP e Evaluation serão incorporados em versões futuras.
 
-Exatamente. Não vamos citar AI-103 em nenhum lugar do projeto. O CareerLens deve parecer um projeto independente, profissional e construído por você para resolver um problema real.
+## 🧠 RAG
 
-Neste momento, como o repositório está praticamente vazio, eu colocaria um README v0.1 que apresenta a visão do produto sem fingir que tudo já está implementado.
+Status: Planejado
 
-Cole todo o conteúdo abaixo no README.md:
+O projeto utilizará Retrieval-Augmented Generation para permitir que os modelos consultem informações externas e gerem respostas fundamentadas em fontes relevantes.
 
-Por que esse README é o certo para começar?
+## 🤖 AI Agent
 
-Porque ele não tenta impressionar inventando funcionalidades. Ele mostra algo que especialistas valorizam: problema → arquitetura → princípios → roadmap → implementação → avaliação.
+Status: Planejado
 
-E tem uma decisão importante: não marcar como concluído aquilo que ainda vamos construir.
+Uma camada de agentes será adicionada para coordenar tarefas como:
 
-Agora, no GitHub, faça:
+- análise do perfil;
+- análise da vaga;
+- consulta ao conhecimento;
+- execução de ferramentas;
+- geração de recomendações.
 
-README.md → ícone de lápis ✏️ → apague o conteúdo atual → cole o README acima → Commit changes.
+## 🔌 MCP
 
-Depois disso, não vamos sair criando código aleatoriamente. O próximo passo será construir a Fase 1 de verdade, com os seus dados profissionais e uma primeira vaga real, para que o primeiro resultado do CareerLens seja baseado no seu próprio perfil.
+Status: Planejado
+
+O Model Context Protocol será estudado e incorporado ao projeto para permitir que agentes acessem ferramentas e fontes de dados através de interfaces padronizadas.
+
+## 📊 Evaluation
+
+Status: Planejado
+
+O Career-Lens possuirá uma camada de avaliação para medir a qualidade das respostas geradas pela IA.
+
+Entre os aspectos avaliados estarão:
+
+- relevância;
+- groundedness;
+- qualidade da recuperação;
+- identificação correta de competências;
+- precisão da análise de gaps.
+
+## 🛠️ Tecnologias
+
+Tecnologias previstas:
+
+- Python
+- Large Language Models
+- RAG
+- Vector Search
+- AI Agents
+- MCP
+- Evaluation
+- APIs
+- Git
+- GitHub
+
+A stack poderá evoluir conforme as necessidades técnicas do projeto.
+
+## 📁 Estrutura do projeto
+
+A estrutura será criada durante a evolução do desenvolvimento.
+
+Exemplo planejado:
+
+career-lens/
+
+├── src/  
+├── data/  
+├── tests/  
+├── docs/  
+├── evaluation/  
+├── README.md  
+└── LICENSE
+
+## 🧪 Testes
+
+Os testes serão adicionados progressivamente.
+
+O objetivo é validar tanto o código tradicional quanto os componentes baseados em IA.
+
+## 🚀 Roadmap
+
+### v0.1 — Definição do problema
+
+- [x] Criação do repositório
+- [x] Definição inicial do problema
+- [x] Definição da visão do projeto
+- [x] Roadmap inicial
+
+### v0.2 — RAG
+
+- [ ] Preparação dos dados
+- [ ] Chunking
+- [ ] Embeddings
+- [ ] Vector Store
+- [ ] Retrieval
+- [ ] Respostas fundamentadas
+
+### v0.3 — AI Agent
+
+- [ ] Definição do agente
+- [ ] Tools
+- [ ] Orquestração
+- [ ] Integração com RAG
+
+### v0.4 — MCP
+
+- [ ] Criação de servidor MCP
+- [ ] Definição de ferramentas
+- [ ] Integração do agente com MCP
+
+### v0.5 — Evaluation
+
+- [ ] Dataset de avaliação
+- [ ] Métricas
+- [ ] Groundedness
+- [ ] Avaliação das respostas
+- [ ] Testes automatizados
+
+### v1.0 — Career-Lens
+
+- [ ] Pipeline completo
+- [ ] Análise de perfil
+- [ ] Análise de vaga
+- [ ] Gap Analysis
+- [ ] Recomendações
+- [ ] RAG
+- [ ] Agent
+- [ ] MCP
+- [ ] Evaluation
+
+## 👤 Autor
+
+**Gilson Ravaiani**
+
+Projeto desenvolvido como laboratório prático de AI Engineering e evolução profissional.
